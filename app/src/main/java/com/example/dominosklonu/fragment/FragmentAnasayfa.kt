@@ -1,5 +1,6 @@
 package com.example.dominosklonu.fragment
 
+import android.app.ActionBar
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
@@ -8,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.dominosklonu.adapter.adaptersData.Pizza
 import com.example.dominosklonu.R

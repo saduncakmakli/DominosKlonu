@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="anasayfaFragment" type="com.example.dominosklonu.FragmentAnasayfa" />
+        <variable name="pizzaAdapter" type="com.example.dominosklonu.adapter.PizzaAdapter" />
+        <variable name="kampanyaAdapter" type="com.example.dominosklonu.adapter.KampanyaViewPagerAdapter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarAnasayfa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/toolbar_menu" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvKampanya"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adapter="@{kampanyaAdapter}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarAnasayfa"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabDots"
+            android:layout_marginBottom="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="center"
+
+            app:tabIndicatorHeight="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/rvKampanya"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPizza"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adapter="@{pizzaAdapter}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvKampanya" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/dominos_icon_foreground"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarAnasayfa"
+            app:layout_constraintEnd_toEndOf="@+id/toolbarAnasayfa"
+            app:layout_constraintStart_toStartOf="@+id/toolbarAnasayfa"
+            app:layout_constraintTop_toTopOf="@+id/toolbarAnasayfa"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

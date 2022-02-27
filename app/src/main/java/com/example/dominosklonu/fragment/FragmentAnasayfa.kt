@@ -31,8 +31,26 @@ class FragmentAnasayfa : Fragment() {
         val p2 = Pizza(2, "Gel Al - 2 Orta Boy Bol Malzemos", "gel_al_2_orta_boy_bol_malzemos", 64.99)
         val p3 = Pizza(3, "Gel Al - 2 Orta Boy Pizza + Coca-Cola Pet 1 lt", "gel_al_2_orta_boy_pizza_coca_cola_pet_1_lt", 74.99)
 
+        val p4 = Pizza(4, "2 Orta Boy Pizza", "orta_boy_2_pizza", 64.99)
+        val p5 = Pizza(5, "3 Al 1 Öde", "al_3_ode_1",109.99)
+        val p6 = Pizza(6, "Büyük Boy Bol Malzemos", "buyuk_boy_bol_malzemos", 71.99)
+
+        val p7 = Pizza(7, "2 Orta Boy Pizza + 2 Algida Dondurma", "orta_2_boy_pizza_2_algida_dondurma", 84.99)
+        val p8 = Pizza(8, "Orta Boy Pizza + Doritos", "orta_boy_pizza_doritos", 54.99)
+        val p9 = Pizza(9, "2 Adet Ekonomik Tavuk Kova veya Makarnos veya Dürümos XL", "adet_2_ekonomik_tavuk_kova_veya_makarnos_veya_durumos_xl", 61.99)
+        val p10 = Pizza(10, "2 Orta Boy Pizza + 2 Adet Sufle", "orta_2_boy_pizza_2_adet_sufle",94.99)
+
         pizzaListesi.add(p1)
         pizzaListesi.add(p2)
+
+        pizzaListesi.add(p4)
+        pizzaListesi.add(p5)
+        pizzaListesi.add(p6)
+        pizzaListesi.add(p7)
+        pizzaListesi.add(p8)
+        pizzaListesi.add(p9)
+        pizzaListesi.add(p10)
+
         pizzaListesi.add(p3)
 
         val adapter = PizzaAdapter(requireContext(),pizzaListesi)

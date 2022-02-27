@@ -21,7 +21,7 @@ class FragmentAnasayfa : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         tasarim = DataBindingUtil.inflate(inflater, R.layout.fragment_anasayfa, container, false)
         tasarim.anasayfaFragment = this
-        tasarim.rvKampanya.layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL)
+        tasarim.rvSlider.layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL)
 
 
 
@@ -60,7 +60,7 @@ class FragmentAnasayfa : Fragment() {
                     else {
                         position = 0
                     }
-                    tasarim.rvKampanya.smoothScrollToPosition(position)
+                    tasarim.rvSlider.smoothScrollToPosition(position)
                 }
                 else firstOpen = false
                 Log.e("Debugg", "Position = ${position}")

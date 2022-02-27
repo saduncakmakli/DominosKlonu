@@ -66,7 +66,7 @@
                     android:layout_height="wrap_content">
 
                     <androidx.recyclerview.widget.RecyclerView
-                        android:id="@+id/rvKampanya"
+                        android:id="@+id/rvSlider"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:adapter="@{kampanyaAdapter}"
@@ -80,10 +80,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="16dp"
-                        app:layout_constraintBottom_toBottomOf="@+id/rvKampanya"
-                        app:layout_constraintEnd_toEndOf="@id/rvKampanya"
+                        app:layout_constraintBottom_toBottomOf="@+id/rvSlider"
+                        app:layout_constraintEnd_toEndOf="@id/rvSlider"
 
-                        app:layout_constraintStart_toStartOf="@id/rvKampanya"
+                        app:layout_constraintStart_toStartOf="@id/rvSlider"
                         app:tabGravity="center"
                         app:tabIndicatorHeight="0dp"
                         app:tabMode="fixed" />

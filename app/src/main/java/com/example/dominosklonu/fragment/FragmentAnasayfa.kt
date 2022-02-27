@@ -138,8 +138,8 @@ class FragmentAnasayfa : Fragment() {
         //Slider Oto-Slide
         var position = 0
         var firstOpen = true
-        val countDownInterval:Long = 5000
-        val timer = object: CountDownTimer((countDownInterval*sliderListesi.size*5+2), countDownInterval) {
+        val countDownInterval:Long = 2500
+        val timer = object: CountDownTimer((countDownInterval*sliderListesi.size*15+2), countDownInterval) {
             override fun onTick(millisUntilFinished: Long) {
                 if (!firstOpen){
                     if (position++ < sliderListesi.size-1){ }

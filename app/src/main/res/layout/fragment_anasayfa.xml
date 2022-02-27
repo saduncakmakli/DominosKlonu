@@ -141,73 +141,156 @@
 
 
                             <ImageView
-                                android:id="@+id/imageViewSiparis1"
+                                android:id="@+id/imageViewSiparis1Frame"
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="8dp"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginEnd="16dp"
                                 android:adjustViewBounds="true"
                                 android:scaleType="fitCenter"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintHorizontal_bias="0.5"
-                                app:layout_constraintStart_toEndOf="@+id/imageViewSiparis2"
+                                app:layout_constraintStart_toEndOf="@+id/imageViewSiparis2Frame"
                                 app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_white_circle" />
+
+                            <ImageView
+                                android:id="@+id/imageViewSiparis2Frame"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/imageViewSiparis1Frame"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageViewSiparis3Frame"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_white_circle" />
+
+                            <ImageView
+                                android:id="@+id/imageViewSiparis3Frame"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/imageViewSiparis2Frame"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageViewSiparis4Frame"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_white_circle" />
+
+                            <ImageView
+                                android:id="@+id/imageViewSiparis4Frame"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/imageViewSiparis3Frame"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageViewSiparis5Frame"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_white_circle" />
+
+                            <ImageView
+                                android:id="@+id/imageViewSiparis5Frame"
+                                android:layout_width="0dp"
+                                android:layout_height="0dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/imageViewSiparis4Frame"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_white_circle" />
+
+                            <ImageView
+                                android:id="@+id/imageViewSiparis1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/ic_white_circle"
+                                android:scaleType="fitCenter"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageViewSiparis5"
+                                app:layout_constraintEnd_toEndOf="@id/imageViewSiparis1Frame"
+                                app:layout_constraintHorizontal_bias="0.5"
+                                app:layout_constraintStart_toEndOf="@+id/imageViewSiparis2"
+                                app:layout_constraintTop_toTopOf="@+id/imageViewSiparis5"
                                 app:srcCompat="@drawable/src_images_png_yekazan_logo" />
 
                             <ImageView
                                 android:id="@+id/imageViewSiparis2"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="8dp"
+                                android:layout_margin="10dp"
                                 android:adjustViewBounds="true"
+                                android:background="@drawable/ic_white_circle"
                                 android:scaleType="fitCenter"
-                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageViewSiparis5"
                                 app:layout_constraintEnd_toStartOf="@+id/imageViewSiparis1"
                                 app:layout_constraintHorizontal_bias="0.5"
                                 app:layout_constraintStart_toEndOf="@+id/imageViewSiparis3"
-                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageViewSiparis5"
                                 app:srcCompat="@drawable/src_images_png_yekazan_logo" />
 
                             <ImageView
                                 android:id="@+id/imageViewSiparis3"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="8dp"
+                                android:layout_margin="10dp"
                                 android:adjustViewBounds="true"
+                                android:background="@drawable/ic_white_circle"
                                 android:scaleType="fitCenter"
-                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageViewSiparis5"
                                 app:layout_constraintEnd_toStartOf="@+id/imageViewSiparis2"
                                 app:layout_constraintHorizontal_bias="0.5"
                                 app:layout_constraintStart_toEndOf="@+id/imageViewSiparis4"
-                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageViewSiparis5"
                                 app:srcCompat="@drawable/src_images_png_yekazan_logo" />
 
                             <ImageView
                                 android:id="@+id/imageViewSiparis4"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="8dp"
+                                android:layout_margin="10dp"
                                 android:adjustViewBounds="true"
+                                android:background="@drawable/ic_white_circle"
                                 android:scaleType="fitCenter"
-                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintBottom_toBottomOf="@+id/imageViewSiparis5"
                                 app:layout_constraintEnd_toStartOf="@+id/imageViewSiparis3"
                                 app:layout_constraintHorizontal_bias="0.5"
                                 app:layout_constraintStart_toEndOf="@+id/imageViewSiparis5"
-                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/imageViewSiparis5"
                                 app:srcCompat="@drawable/src_images_png_yekazan_logo" />
 
                             <ImageView
                                 android:id="@+id/imageViewSiparis5"
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="8dp"
+                                android:layout_margin="10dp"
+                                android:layout_marginStart="16dp"
                                 android:adjustViewBounds="true"
+                                android:background="@drawable/ic_white_circle"
                                 android:scaleType="fitCenter"
-                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintBottom_toBottomOf="@id/imageViewSiparis5Frame"
                                 app:layout_constraintEnd_toStartOf="@+id/imageViewSiparis4"
                                 app:layout_constraintHorizontal_bias="0.5"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toStartOf="@id/imageViewSiparis5Frame"
+                                app:layout_constraintTop_toTopOf="@id/imageViewSiparis5Frame"
                                 app:srcCompat="@drawable/src_images_png_yekazan_logo" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>

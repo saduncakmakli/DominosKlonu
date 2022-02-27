@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="kampanyaNesnesi" type="com.example.dominosklonu.Kampanya" />
+        <variable name="sliderItemNesnesi" type="com.example.dominosklonu.SliderItem" />
     </data>
 
     <LinearLayout

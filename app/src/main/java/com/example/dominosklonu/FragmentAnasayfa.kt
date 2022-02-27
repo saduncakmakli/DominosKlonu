@@ -10,7 +10,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.example.dominosklonu.adapter.PizzaAdapter
-import com.example.dominosklonu.adapter.KampanyaViewPagerAdapter
+import com.example.dominosklonu.adapter.SliderAdapter
 import com.example.dominosklonu.databinding.FragmentAnasayfaBinding
 
 class FragmentAnasayfa : Fragment() {
@@ -35,16 +35,16 @@ class FragmentAnasayfa : Fragment() {
         val adapter = PizzaAdapter(requireContext(),pizzaListesi)
         tasarim.pizzaAdapter = adapter
 
-        val kampanyaListesi = ArrayList<Kampanya>()
-        val k1 = Kampanya(1, "kampanya1")
-        val k2 = Kampanya(2, "kampanya2")
-        val k3 = Kampanya(3, "kampanya3")
+        val kampanyaListesi = ArrayList<SliderItem>()
+        val k1 = SliderItem(1, "kampanya1")
+        val k2 = SliderItem(2, "kampanya2")
+        val k3 = SliderItem(3, "kampanya3")
 
         kampanyaListesi.add(k1)
         kampanyaListesi.add(k2)
         kampanyaListesi.add(k3)
 
-        val kampanyaAdapter = KampanyaViewPagerAdapter(requireContext(),kampanyaListesi)
+        val kampanyaAdapter = SliderAdapter(requireContext(),kampanyaListesi)
         tasarim.kampanyaAdapter = kampanyaAdapter
 
         var position = 0

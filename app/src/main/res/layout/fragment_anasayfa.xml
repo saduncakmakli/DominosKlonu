@@ -6,7 +6,7 @@
     <data>
         <variable name="anasayfaFragment" type="com.example.dominosklonu.FragmentAnasayfa" />
         <variable name="pizzaAdapter" type="com.example.dominosklonu.adapter.PizzaAdapter" />
-        <variable name="kampanyaAdapter" type="com.example.dominosklonu.adapter.KampanyaViewPagerAdapter" />
+        <variable name="kampanyaAdapter" type="com.example.dominosklonu.adapter.SliderAdapter" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

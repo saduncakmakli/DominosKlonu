@@ -4,7 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-        <variable name="pizzaNesnesi" type="com.example.dominosklonu.Pizza" />
+        <variable name="pizzaNesnesi" type="com.example.dominosklonu.adapter.adaptersData.Pizza" />
     </data>
 
     <LinearLayout

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-        <variable name="anasayfaFragment" type="com.example.dominosklonu.FragmentAnasayfa" />
+        <variable name="anasayfaFragment" type="com.example.dominosklonu.fragment.FragmentAnasayfa" />
         <variable name="pizzaAdapter" type="com.example.dominosklonu.adapter.PizzaAdapter" />
         <variable name="kampanyaAdapter" type="com.example.dominosklonu.adapter.SliderAdapter" />
     </data>

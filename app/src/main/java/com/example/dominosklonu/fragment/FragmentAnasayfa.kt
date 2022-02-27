@@ -1,4 +1,4 @@
-package com.example.dominosklonu
+package com.example.dominosklonu.fragment
 
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -9,6 +9,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
+import com.example.dominosklonu.adapter.adaptersData.Pizza
+import com.example.dominosklonu.R
+import com.example.dominosklonu.adapter.adaptersData.SliderItem
 import com.example.dominosklonu.adapter.PizzaAdapter
 import com.example.dominosklonu.adapter.SliderAdapter
 import com.example.dominosklonu.databinding.FragmentAnasayfaBinding

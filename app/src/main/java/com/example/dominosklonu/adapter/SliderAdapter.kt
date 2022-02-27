@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.dominosklonu.SliderItem
+import com.example.dominosklonu.adapter.adaptersData.SliderItem
 import com.example.dominosklonu.databinding.CardSliderBinding
 
 class SliderAdapter(var mContext:Context, var sliderItemListesi:List<SliderItem>) : RecyclerView.Adapter<SliderAdapter.ViewHolder>() {

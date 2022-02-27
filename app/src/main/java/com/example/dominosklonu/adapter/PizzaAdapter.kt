@@ -4,7 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.dominosklonu.Pizza
+import com.example.dominosklonu.adapter.adaptersData.Pizza
 import com.example.dominosklonu.databinding.CardTasarimBinding
 
 class PizzaAdapter (var mContext:Context, var pizzaListesi:List<Pizza>) : RecyclerView.Adapter<PizzaAdapter.CardTasarimTutucu>() {

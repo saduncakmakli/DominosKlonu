@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/fragment_anasayfa"
-        android:name="com.example.dominosklonu.FragmentAnasayfa"
+        android:name="com.example.dominosklonu.fragment.FragmentAnasayfa"
         android:label="fragment_anasayfa" />
 </navigation>

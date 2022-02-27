@@ -10,63 +10,95 @@
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutMain"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarAnasayfa"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:menu="@menu/toolbar_menu" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvKampanya"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:adapter="@{kampanyaAdapter}"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/toolbarAnasayfa"/>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbarAnasayfa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/toolbar_menu" />
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabDots"
-            android:layout_marginBottom="40dp"
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/dominos_icon_foreground"
+                app:layout_constraintBottom_toBottomOf="@id/toolbarAnasayfa"
+                app:layout_constraintEnd_toEndOf="@+id/toolbarAnasayfa"
+                app:layout_constraintStart_toStartOf="@+id/toolbarAnasayfa"
+                app:layout_constraintTop_toTopOf="@id/toolbarAnasayfa" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabMode="fixed"
-            app:tabGravity="center"
-
-            app:tabIndicatorHeight="0dp"
-            app:layout_constraintBottom_toBottomOf="@+id/rvKampanya"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvPizza"
-            android:layout_width="0dp"
             android:layout_height="0dp"
-            android:adapter="@{pizzaAdapter}"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rvKampanya" />
+            app:layout_constraintTop_toBottomOf="@id/constraintLayoutToolbar">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:scaleType="fitCenter"
-            android:src="@mipmap/dominos_icon_foreground"
-            app:layout_constraintBottom_toBottomOf="@+id/toolbarAnasayfa"
-            app:layout_constraintEnd_toEndOf="@+id/toolbarAnasayfa"
-            app:layout_constraintStart_toStartOf="@+id/toolbarAnasayfa"
-            app:layout_constraintTop_toTopOf="@+id/toolbarAnasayfa"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayoutKampanyalar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvKampanya"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:adapter="@{kampanyaAdapter}"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/rvKampanya"
+                        app:layout_constraintEnd_toEndOf="@id/rvKampanya"
+
+                        app:layout_constraintStart_toStartOf="@id/rvKampanya"
+                        app:tabGravity="center"
+                        app:tabIndicatorHeight="0dp"
+                        app:tabMode="fixed" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPizza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adapter="@{pizzaAdapter}"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </LinearLayout>
+        </ScrollView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

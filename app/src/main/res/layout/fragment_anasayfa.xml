@@ -6,7 +6,8 @@
     <data>
         <variable name="anasayfaFragment" type="com.example.dominosklonu.fragment.FragmentAnasayfa" />
         <variable name="pizzaAdapter" type="com.example.dominosklonu.adapter.PizzaAdapter" />
-        <variable name="kampanyaAdapter" type="com.example.dominosklonu.adapter.SliderAdapter" />
+        <variable name="sliderAdapter" type="com.example.dominosklonu.adapter.SliderAdapter" />
+        <variable name="kampanyaAdapter" type="com.example.dominosklonu.adapter.KampanyaAdapter" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -69,7 +70,7 @@
                         android:id="@+id/rvSlider"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:adapter="@{kampanyaAdapter}"
+                        android:adapter="@{sliderAdapter}"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -89,6 +90,12 @@
                         app:tabMode="fixed" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvKampanya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adapter="@{kampanyaAdapter}"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvPizza"

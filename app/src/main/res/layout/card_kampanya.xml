@@ -9,8 +9,8 @@
     </data>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
@@ -22,7 +22,7 @@
 
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="150dp"
+                    android:layout_width="110dp"
                     android:layout_height="50dp"
                     android:gravity="center"
                     android:text="@{kampanyaNesnesi.yazi}"
@@ -38,7 +38,7 @@
                     android:layout_width="0dp"
                     android:layout_height="3dp"
                     android:background="@color/blue"
-                    android:visibility="@{kampanyaNesnesi.id==0 ? View.VISIBLE : View.INVISIBLE}"
+                    android:visibility="@{kampanyaNesnesi.id==1 ? View.VISIBLE : View.INVISIBLE}"
                     app:layout_constraintEnd_toEndOf="@+id/textView"
                     app:layout_constraintStart_toStartOf="@+id/textView"
                     app:layout_constraintTop_toBottomOf="@+id/textView" />

@@ -13,4 +13,5 @@
     <color name="gold">#FFF9A825</color>
     <color name="transparent">#00000000</color>
     <color name="semi_transparent">#7F000000</color>
+    <color name="dark_gray">#455A64</color>
 </resources>

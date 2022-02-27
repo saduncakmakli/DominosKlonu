@@ -8,6 +8,7 @@
         <variable name="pizzaAdapter" type="com.example.dominosklonu.adapter.PizzaAdapter" />
         <variable name="sliderAdapter" type="com.example.dominosklonu.adapter.SliderAdapter" />
         <variable name="kampanyaAdapter" type="com.example.dominosklonu.adapter.KampanyaAdapter" />
+        <variable name="urunTuruAdapter" type="com.example.dominosklonu.adapter.UrunTuruAdapter" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -125,7 +126,6 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
                         android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp"
                         android:elevation="10dp"
                         app:cardBackgroundColor="@color/light_blue"
                         app:cardCornerRadius="10dp"
@@ -145,8 +145,8 @@
                                 android:layout_width="0dp"
                                 android:layout_height="0dp"
                                 android:layout_marginTop="8dp"
-                                android:layout_marginBottom="8dp"
                                 android:layout_marginEnd="16dp"
+                                android:layout_marginBottom="8dp"
                                 android:adjustViewBounds="true"
                                 android:scaleType="fitCenter"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -297,6 +297,12 @@
                     </androidx.cardview.widget.CardView>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvUrunTuru"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adapter="@{urunTuruAdapter}"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvKampanya"

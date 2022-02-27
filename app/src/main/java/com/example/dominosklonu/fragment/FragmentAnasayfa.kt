@@ -15,7 +15,9 @@ import com.example.dominosklonu.adapter.KampanyaAdapter
 import com.example.dominosklonu.adapter.adaptersData.SliderItem
 import com.example.dominosklonu.adapter.PizzaAdapter
 import com.example.dominosklonu.adapter.SliderAdapter
+import com.example.dominosklonu.adapter.UrunTuruAdapter
 import com.example.dominosklonu.adapter.adaptersData.Kampanya
+import com.example.dominosklonu.adapter.adaptersData.UrunTuru
 import com.example.dominosklonu.databinding.FragmentAnasayfaBinding
 
 class FragmentAnasayfa : Fragment() {
@@ -83,6 +85,37 @@ class FragmentAnasayfa : Fragment() {
 
         val kampanyaAdapter = KampanyaAdapter(requireContext(), kampanyaListesi)
         tasarim.kampanyaAdapter = kampanyaAdapter
+
+        tasarim.rvUrunTuru.layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL) //RecycleView Setting
+        val urunTuruListesi = ArrayList<UrunTuru>()
+        val u1 = UrunTuru(1,"Kampanya", "kampanya")
+        val u2 = UrunTuru(2,"Pizza", "pizza")
+        val u3 = UrunTuru(3,"İçecekler","")
+        val u4 = UrunTuru(4,"Dürümler","")
+        val u5 = UrunTuru(5, "Ekmek Arası", "")
+        val u6 = UrunTuru(6, "Tavuklar", "")
+        val u7 = UrunTuru(7,"Makarnalar","")
+        val u8 = UrunTuru(8, "Patates & Cips", "")
+        val u9 = UrunTuru(9, "Tatlılar", "")
+        val u10 = UrunTuru(10, "Tostilla", "")
+        val u11 = UrunTuru(11, "Ekmekler", "")
+        val u12 = UrunTuru(12, "Soslar", "")
+
+        urunTuruListesi.add(u1)
+        urunTuruListesi.add(u2)
+        urunTuruListesi.add(u3)
+        urunTuruListesi.add(u4)
+        urunTuruListesi.add(u5)
+        urunTuruListesi.add(u6)
+        urunTuruListesi.add(u7)
+        urunTuruListesi.add(u8)
+        urunTuruListesi.add(u9)
+        urunTuruListesi.add(u10)
+        urunTuruListesi.add(u11)
+        urunTuruListesi.add(u12)
+
+        val urunTuruAdapter = UrunTuruAdapter(requireContext(), urunTuruListesi)
+        tasarim.urunTuruAdapter = urunTuruAdapter
 
         //Slider Oto-Slide
         var position = 0
